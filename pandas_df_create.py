@@ -9,10 +9,12 @@ df = pd.DataFrame()
 print(df.shape)
 ### DataFrame mit Random Wertem (int Index und Columns)
 df = pd.DataFrame(np.random.rand(4,3))
+print(df)
 ### DataFrame mit Index- und Column- Names
 idx = ['n'+str(i) for i in range(4)]
 col = list('abc')
 df = pd.DataFrame(np.random.rand(4,3), index=idx, columns=col)
+print(df)
 ################################################################################
 ### Create DataFrame from Dictionaries, Items und Records
 myDict = [{'k1':4, 'k2':6}, {'k1':7, 'k2':3 }]
@@ -47,7 +49,7 @@ df.columns = ['Col1','Col2','Col3']
 # Rename Index-Names
 df.index = ['z1','z2','z3','z4']
 ################################################################################
-### Spalten oder Zeilen löschen
+### Spalten oder Zeilen loeschen
 # Spalten loeschen
 df = pd.DataFrame(np.random.rand(4,3), columns=list('abc'))
 df.drop(['a','b'],axis=1)
@@ -58,4 +60,5 @@ df.drop([0, 1], axis=0)
 # spezifische Zeilen loeschen
 idx = df.index[df['a']>0.8]
 df.drop(idx)
+print(df)
 
