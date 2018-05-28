@@ -62,5 +62,4 @@ df.drop([0, 1], axis=0)
 # spezifische Zeilen loeschen
 idx = df.index[df['a']>0.8]
 df.drop(idx)
-print(df)
 
