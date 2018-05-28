@@ -34,7 +34,8 @@ z1 = [3,3,3,3]
 z2 = [9,9,9,9]
 z3 = [0,0,0,0]
 labels = ['k1','k2','k3','k4']
-pd.DataFrame(list([z1, z2, z3]),columns=labels)
+df = pd.DataFrame(list([z1, z2, z3]),columns=labels)
+print(df)
 # Create DataFrame aus Spalten
 k1 = [3,3,3,3]
 k2 = [9,9,9,9]
@@ -60,5 +61,4 @@ df.drop([0, 1], axis=0)
 # spezifische Zeilen loeschen
 idx = df.index[df['a']>0.8]
 df.drop(idx)
-print(df)
 
