@@ -40,7 +40,8 @@ k1 = [3,3,3,3]
 k2 = [9,9,9,9]
 k3 = [0,0,0,0]
 labels = ['k1','k2','k3']
-pd.DataFrame(list(zip(k1, k2, k3)),columns=labels)
+df = pd.DataFrame(list(zip(k1, k2, k3)),columns=labels)
+print(df)
 ################################################################################
 ### Rename Column- und Index- Names
 df = pd.DataFrame(np.random.rand(4,3))
