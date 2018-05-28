@@ -18,7 +18,8 @@ print(df)
 ################################################################################
 ### Create DataFrame from Dictionaries, Items und Records
 myDict = [{'k1':4, 'k2':6}, {'k1':7, 'k2':3 }]
-pd.DataFrame(myDict)
+df = pd.DataFrame(myDict)
+print(df)
 # Create DataFrame from Dictionaries (Spalten orientiert)
 myDict = {'k1':[3,3,3,3], 'k2':[9,9,9,9], 'k3': [0,0,0,0]}
 pd.DataFrame.from_dict(myDict)
