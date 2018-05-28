@@ -28,7 +28,8 @@ pd.DataFrame.from_items(myDict)
 # Create DataFrame from Records Zeilen orientiert
 data = [(3,3,3,3),(9,9,9,9),(0,0,0,0)]
 labels = ['k1','k2','k3','k4']
-pd.DataFrame.from_records(data, columns=labels)
+df = pd.DataFrame.from_records(data, columns=labels)
+print(df)
 # Create DataFrame aus Zeilen
 z1 = [3,3,3,3]
 z2 = [9,9,9,9]
